@@ -20,7 +20,7 @@ function LoginForm() {
   }
 
   useEffect(() => {
-
+    console.log("envv", process.env.NEXT_PROD_BACKEND_URL);
     dispatch(resetLoginError());
 
   }, [dispatch])

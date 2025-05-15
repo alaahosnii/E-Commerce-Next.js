@@ -17,6 +17,7 @@ function CategorySection({ products, error, isFlash = false, categoryName, descr
     isExplore?: boolean,
     isBestSelling?: boolean
 }) {
+    console.log("envv", process.env.NEXT_PUBLIC_BACKEND_URL);
     const context = useContext(ProductsInRoutesContext);
     if (!context) {
         throw new Error("useProductsInRoutes must be used within a ProductsInRoutesContextProvider");

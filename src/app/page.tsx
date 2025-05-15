@@ -6,6 +6,7 @@ import ProductsInHome from "./_components/ProductsInHome/ProductsInHome";
 
 export const revalidate = 0;
 export default async function Home() {
+  console.log("envv", process.env.NEXT_PUBLIC_BACKEND_URL);
   return (
     <div className='flex flex-col mx-auto container'>
 

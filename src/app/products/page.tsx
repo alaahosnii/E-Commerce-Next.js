@@ -5,6 +5,7 @@ import ProductComponent from '../_components/ProductComponent/ProductComponent';
 
 
 export default function Products() {
+
     const context = useContext(ProductsInRoutesContext);
     if (!context) {
         throw new Error("useProductsInRoutes must be used within a ProductsInRoutesContextProvider");

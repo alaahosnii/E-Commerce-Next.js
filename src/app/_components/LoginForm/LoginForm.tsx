@@ -91,7 +91,6 @@ function LoginForm() {
           errors,
           handleChange,
           handleSubmit,
-          isSubmitting,
           /* and other goodies */
         }) => (
           <form className='d-flex flex-column' style={{ width: "70%" }} onSubmit={handleSubmit}>

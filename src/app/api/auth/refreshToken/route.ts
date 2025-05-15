@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import axiosInstance from "@/app/_utils/axiosInstance";
+import { AxiosError } from "axios";
+type ErrorResponse = {
+    status: number;
+    message: string;
+}
 export async function GET(request: NextRequest) {
     const token = request.headers.get("Authorization")?.split(" ")[1];
     console.log("token", request.headers.get("Authorization"));
@@ -21,8 +26,9 @@ export async function GET(request: NextRequest) {
             path: "/",
         });
         return res;
-    } catch (error) {
-        return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
+    } catch (error: unknown) {
+        const axiosError = error as AxiosError<ErrorResponse>;
+        return NextResponse.json({ error: axiosError?.response?.data.message || "Something went wrong" }, { status: 500 });
     }
 
 }   

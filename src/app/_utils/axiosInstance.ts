@@ -1,6 +1,6 @@
 import axios from "axios";
 import axiosInstance from "@/app/_redux/services/axiosInstance";
-import { cookies, headers } from "next/headers";
+import { cookies } from "next/headers";
 
 const isBrowser = typeof window !== "undefined";
 

@@ -1,5 +1,5 @@
 "use client"
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/app/_redux/store";
 import { toast } from "react-toastify";

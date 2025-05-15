@@ -9,7 +9,8 @@ import Footer from "./_components/Footer/Footer";
 import NavComponent from "./_components/NavComponent/NavComponent";
 import Spacer from "./_components/Spacer/Spacer";
 import { ToastContainer } from "react-toastify";
-
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const bebas = Public_Sans({
   subsets: ["latin"],
   weight: "500",
@@ -38,6 +39,8 @@ export default function RootLayout({
             {children}
             <ToastContainer />
           </div>
+          <SpeedInsights />
+          <Analytics />
         </Providers>
         <Footer />
       </body>

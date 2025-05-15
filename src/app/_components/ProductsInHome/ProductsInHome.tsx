@@ -1,7 +1,7 @@
 import React from 'react'
 import CategorySection from '../CategorySection'
 import { Product } from '@/app/_types/productTypes';
-import instance from '@/app/_utils/axiosInstance';
+import instance from '@/app/_redux/services/axiosInstance';
 
 export default async function ProductsInHome() {
     const { products, error } = await getProducts();

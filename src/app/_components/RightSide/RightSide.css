@@ -1,0 +1,37 @@
+.favBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 2px;
+    border-radius: 7px;
+    border: 1px solid rgb(134, 134, 134);
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    border: 1px solid rgb(134, 134, 134);
+    color: black;
+}
+
+.favBtnSelected {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 2px;
+    border-radius: 7px;
+    border: 1px solid #dc3545;
+
+}
+
+.m-top {
+    margin-top: 30px;
+}
+
+@media (width >=64rem) {
+    .m-top {
+        margin-top: 0px;
+    }
+}

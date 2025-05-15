@@ -1,0 +1,20 @@
+.mainContent {
+    width: 80%;
+}
+
+.moveToCartWhenHover {
+    opacity: 0;
+    /* height: 0px;
+    width: 0px; */
+    transition: all 0.5s ease-in-out;
+}
+.moveAllToCart{
+    padding: 0px;
+}
+.moveAllToCart:hover .moveToCartWhenHover {
+    opacity: 1;
+    /* color: white; */
+    /* height: 100%;
+    width: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+}

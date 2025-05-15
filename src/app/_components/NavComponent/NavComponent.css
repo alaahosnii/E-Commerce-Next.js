@@ -1,0 +1,21 @@
+ul li {
+    list-style: none;
+    padding-right: 40px;
+}
+
+ul{
+    margin-bottom: 0;
+}
+input[type="text"] {
+    background-color: rgba(245, 245, 245, 1);
+    color: black;
+    height: 40px;
+    width: 270px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+}
+
+
+

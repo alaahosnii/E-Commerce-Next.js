@@ -1,0 +1,17 @@
+.sizeCard:hover {
+    cursor: pointer;
+}
+
+.sizeCard{
+    background-color: transparent;
+    border: 1px solid rgb(134, 134, 134);
+    color: black;
+    transition: all 0.3s ease-in-out; 
+
+}
+
+.sizeCardSelected{
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: white;
+}
